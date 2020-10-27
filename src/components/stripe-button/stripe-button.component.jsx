@@ -14,7 +14,7 @@ const StripeCheckoutButton = ({ price}) => {
             name='CRWN Clothing Ltd.'
             billingAddress
             shippingAddress
-            currency='GDP'
+            currency='GBP'
             image='https://svgshare.com/i/CUz.svg'
             description={`Your total is £${price}`}
             amount={priceForStripe}
