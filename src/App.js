@@ -49,7 +49,7 @@ class App extends React.Component {
                                ) : (
                                    <SignInAndSignUp />
                                )} />
-                    <Route exact path='/shop' component={ShopPage} />
+                    <Route path='/shop' component={ShopPage} />
                     <Route exact path='/checkout' component={CheckoutPage} />
                     <Route component={HomePage} />
                 </Switch>
