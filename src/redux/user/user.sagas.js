@@ -91,7 +91,7 @@ export function* userSagas() {
     yield(all([
         onLatest(UserActionTypes.GOOGLE_SIGN_IN_START, signInWithGoogle),
         onLatest(UserActionTypes.EMAIL_SIGN_IN_START, signInWithEmail),
-        onLatest(UserActionTypes.CHECK_USER_SESSION, checkUserSession),
+        onLatest(UserActionTypes.CHECK_USER_SESSION, isUserAuthenticated),
         onLatest(UserActionTypes.SIGN_OUT_START, signOut),
         onLatest(UserActionTypes.SIGN_UP_START, signUp),
         onLatest(UserActionTypes.SIGN_UP_SUCCESS, signInAfterSignUp)
